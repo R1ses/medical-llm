@@ -1,0 +1,7 @@
+model_name_or_path: output/grpo_mixed_merged
+adapter_name_or_path: output/dpo_lora_v2
+template: qwen
+finetuning_type: lora
+export_dir: output/dpo_merged_v2
+export_size: 5
+export_legacy_format: false

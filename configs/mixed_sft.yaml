@@ -1,0 +1,17 @@
+model_name_or_path: qwen2.5-3b-instruct
+stage: sft
+finetuning_type: lora
+lora_rank: 16
+lora_alpha: 32
+dataset: mixed_sft
+dataset_dir: data
+template: qwen
+cutoff_len: 2048
+output_dir: output/mixed_lora
+per_device_train_batch_size: 4
+gradient_accumulation_steps: 4
+learning_rate: 5.0e-5
+num_train_epochs: 3
+bf16: true
+do_train: true
+report_to: wandb
