@@ -3,7 +3,7 @@ import json, os, time, re, threading
 from openai import OpenAI
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-API_KEY = os.environ.get("JUDGE_API_KEY", "")  
+API_KEY  = os.environ.get("JUDGE_API_KEY", "")
 BASE_URL = "https://api.deepseek.com"   
 MODEL    = "deepseek-v4-flash" 
 TARGET   = 800
